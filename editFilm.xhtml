@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>[ADMIN] Edit Film</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <h:form>
+        <div><h3>Edit Film</h3></div>
+        <table>
+            Enter the ID of the film
+            <h:inputText value="#{movies.id}"></h:inputText>
+            Enter the Edited Name of the Film
+            <h:inputText value="#{movies.filmName}"></h:inputText>
+            
+            Enter the Edited Screen Number
+            <h:inputText value="#{movies.screenNo}"></h:inputText>
+            <h:commandButton value="Edit Film" action="#{loginMB.editFilm(movies.id, movies.filmName, movies.screenNo)}"></h:commandButton>
+        </table>
+    </h:form>
+    </body>
+</html>

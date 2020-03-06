@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>[ADMIN] Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <h:form>
+        <div><h3>Landing Page Admin</h3></div>
+        <table>
+            Click to add a new Film
+            <h:commandButton value="Add new Film" action="newFilm"></h:commandButton>
+            
+            Click to edit a film
+            <h:commandButton value="Edit Film" action="editFilm"></h:commandButton>
+            
+            Click to delete a film
+            <h:commandButton value="Delete Film" action="deleteFilm"></h:commandButton>
+            
+            Click to delete a user
+            <h:commandButton value="Delete User" action="deleteUser"></h:commandButton>
+            
+            Display Films (Please check glass fish server)
+            <h:commandButton value="Display Films" action="#{usersMB.displayFilm()}"></h:commandButton>
+        </table>
+    </h:form>
+    </body>
+</html>

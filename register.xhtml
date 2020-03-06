@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:form>
+        User Registration
+        <h:panelGrid id="indexPanel" columns="2" border="1" cellpadding="10" cellspacing="10">
+            Enter your name
+            <h:inputText value="#{users.username}"></h:inputText>
+            
+            Enter your password
+            <h:inputText value="#{users.password}"></h:inputText>
+            
+            Log in
+            <h:commandButton value="Register" action="#{loginMB.registerUser(users.username, users.password)}"></h:commandButton>
+        </h:panelGrid>
+        </h:form>
+</html>

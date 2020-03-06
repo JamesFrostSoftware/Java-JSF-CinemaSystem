@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>[ADMIN] Add new Film</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <h:form>
+        <div><h3>Add New Film</h3></div>
+        <table>
+            Enter the Name of the Film
+            <h:inputText value="#{movies.filmName}"></h:inputText>
+            
+            Enter the Screen Number
+            <h:inputText value="#{movies.screenNo}"></h:inputText>
+            
+            Enter Number of tickets
+            <h:inputText value="#{movies.ticketsLeft}"></h:inputText>
+            
+            <h:commandButton value="Add new Film" action="#{loginMB.newFilm(movies.filmName, movies.screenNo, movies.ticketsLeft)}"></h:commandButton>
+        </table>
+    </h:form>
+    </body>
+</html>
